@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Casa Dello Zecchiere – Milano</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styling.css" rel="stylesheet" type="text/css"/>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA33g-37yhggBHuZ9XDyz-yBc6vP0UZukk&callback=locatorMap"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+        <div id="topBar">
+            <h1>Casa dello Zecchiere - Milano</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dove">Dove</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#storia">Storia</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </div>
+        
+        <div id="mobileMenu">
+            <a class="burgerNav" href="#home">Home</a>
+            <a class="burgerNav" href="#dove">Dove</a>
+            <a class="burgerNav" href="#servizi">Servizi</a>
+            <a class="burgerNav" href="#storia">Storia</a>
+            <a class="burgerNav" href="#contatti">Contatti</a>
+        </div>
+        
+        <div id="burgerBackGround">
+            <h1>Casa Dello Zecchiere</h1>
+            <p class="blurry">Milano</p>
+            <div class="burgerMenu">
+                <div id="top" class="bar barTop"></div>
+                <div id="middle" class="bar barMid"></div>
+                <div id="bottom" class="bar barBot"></div>
+            </div>
+        </div>
+        
+        <div id="background">
+            <img src="images/logo3.png" id="logo" alt=""/>
+            <img src="images/background.png" id="affresco" alt=""/>
+            <h1>MILANO</h1>
+            <div id="one"><p class="blurry">Location Storica</p></div>
+            <div id="centerContainer">
+                <div id="two"><p class="blurry">Eventi</p></div>
+                <div id="three"><p class="blurry">–</p></div>
+                <div id="four"><p class="blurry">Esposizioni</p></div>
+            </div>
+        </div>
+        
+        <div id="container">
+            <!--HOME SECTION-->
+            <div id="homeHeader">
+                <img class="decL homeFader" src="images/decL.png" width="60" alt=""/>
+                <h1 style="text-align: center;">HOME</h1>
+                <img class="decR homeFader" src="images/decR.png" width="60" alt=""/>
+            </div>
+           
+            <div id="home"></div>
+            <p class="blurry">Benvenuti nella Casa dello Zecchiere, location situata nel cuore di Milano, 
+                dove il fascino della storia incontra la modernità
+                A disposizione per tutte le tipologie di eventi.<br><br>Contattaci per un 
+                preventivo e visionare i nostri spazi! 
+                <a class="blurry" href="malto:info@casadellozecchiere.it">info@casadellozecchiere.it</a></p>
+            
+            <div id="homeSlideShow">
+                <img class="homeSlides" src="images/homeOne.png" alt=""/>
+                <img class="homeSlides" src="images/homeTwo.png" alt=""/>
+                <img class="homeSlides" src="images/homeThree.png" alt=""/>
+                <img class="homeSlides" src="images/homeFour.png" alt=""/>
+            </div>
+            
+            <!--LOCATION SECTION-->
+            <div id="doveHeader">
+                <img class="decL fader" src="images/decL.png" width="60" alt=""/>
+                <h1 style="text-align: center;">DOVE</h1>
+                <img class="decR fader" src="images/decR.png" width="60" alt=""/>
+            </div>
+            <div id="dove"></div>
+            <p class="blurry">La Casa dello Zecchiere si trova in via del bollo 3, nel cuore della vecchia Milano, 
+                a due passi da Piazza Duomo.<br><br>Metro: linea gialla fermata Duomo/Missori – linea 
+                rossa fermata Cordusio/Duomo<br><br>Tram: n° 1-3-12-14-16-27</p>
+            <div id="mapOne">Loading...</div>
+            
+            <!--SERVICES SECTION-->
+            <div id="serviziHeader">
+                <div class="homeFader"><img class="decL" src="images/decL.png" width="60" alt=""/></div>
+                <h1 style="text-align: center;">SERVIZI</h1>
+                <div class="homeFader"><img class="decR" src="images/decR.png" width="60" alt=""/></div>
+            </div>
+            <div id="servizi"></div>
+            <p class="blurry" style="text-align: left;">La location è dotata di:
+                <br><br>
+                - Locale reception<br>- Servizio igienico (accesso disabili)
+                <br>
+                - Uscita di sicurezza<br>- Allarme antincendio
+                <br>
+                - Ascensore per n° 3 persone<br>- Illuminazione regolabile (via "dimmer")
+                <br>
+                - Rete dati radiale<br>- Schermo/monitor LCD 50”
+                <br>
+                - Connessione WiFi<br>- Antenna TV</p>
+            
+            <div id="serviceSlideShow">
+                <img class="serviceSlides" src="images/servizi1.jpg" alt=""/>
+                <img class="serviceSlides" src="images/servizi2.jpg" alt=""/>
+                <img class="serviceSlides" src="images/servizi3.jpg" alt=""/>
+                <img class="serviceSlides" src="images/servizi4.jpg" alt=""/>
+            </div>
+            
+            <!--HISTORY SECTION-->
+            <div id="storiaHeader">
+                <img class="decL fader" src="images/decL.png" width="60" alt=""/>
+                <h1 style="text-align: center;">STORIA</h1>
+                <img class="decR fader" src="images/decR.png" width="60" alt=""/>
+            </div>
+            <div id="storia"></div>
+            <p class="blurry">Gli spazi di questa location fanno parte di edifici un tempo connessi alla Zecca di Milano 
+                che batteva moneta sino dall’epoca sforzesca. Le strutture murarie sotterranee risalgono 
+                alla seconda metà del XV secolo; particolari degli affreschi ritrovati nei locali superiori 
+                permettono di datare l’edificio attorno al primo quarto del Cinquecento. L’immobile, di cui 
+                parla anche il Vasari, apparteneva alla famiglia Scaccabarozzi, Luigi padre e Bernardo figlio, 
+                che ricoprirono la carica di Zecchiere dal 1488 al 1562. La Zecca di Milano, demolita nel 1780, 
+                era confinante con questi spazi. Nel tardo Settecento l’edificio è stato inglobato nelle strutture 
+                edilizie che oggi lo circondano. Nel corso del 1800 e del 1900 l’uso che si fece di questi spazi 
+                divenne meno nobile e vi trovarono posto laboratori, magazzini e cantine dove venne anche realizzata 
+                una cisterna per l’acqua, rimossa con il restauro.
+                <br><br>Nel 2012, con il benestare delle Soprintendenze, la proprietà ha deciso di restaurare questi 
+                edifici e i lavori si sono conclusi nel 2015. Su progetto dell’arch. Massimo Hachen sono 
+                state consolidate le volte quattrocentesche, eliminate tutte le superfetazioni costruite nel tempo, 
+                recuperando l’uso delle sale sotterranee e in particolare quella delle quattro colonne. È stato poi 
+                scavato un nuovo accesso al piano interrato, coperto da una struttura vetrata ad onda, con scala e 
+                ascensore. Durante lo scavo sono stati rinvenuti vari cocci di ceramica e due pietre lavorate di 
+                origine romana che sono visibili in loco.</p>
+            <div id="containLastImage">
+                <img src="images/lastImage.png" alt=""/>
+            </div>
+            
+            <!--CONTACTS SECTION-->
+            <div id="contattiHeader">
+                <img class="decL fader" src="images/decL.png" width="60" alt=""/>
+                <h1 style="text-align: center;">CONTATTI</h1>
+                <img class="decR fader" src="images/decR.png" width="60" alt=""/>
+            </div>
+            <div id="contatti"></div>
+            <div id="containContacts">
+                <p class="blurry">+39 02 89010476
+                <br><br><br>
+                +39 3358082257 / +39 3396137309
+                <br><br><br>
+                <a class="blurry" href="malto:info@casadellozecchiere.it">info@casadellozecchiere.it</a></p>
+                <img id="phone" class="icon" src="images/telefono.png" width="35" alt=""/>
+                <img id="mobile" class="icon" src="images/cellulare.png" width="25" alt=""/>
+                <img id="mail" class="icon" src="images/mail.png" width="40" alt=""/>
+            </div>
+            
+            <div id="footer">
+                <div id="creditOne">
+                    <p class="blurry">Web design by <a class="blurry" href="https://bggrieco.github.io/" target="_blank">Brian Grieco</a> ©2017</p>
+                </div>
+                
+                <div id="creditTwo">
+                    <p class="blurry">Pictures by Federico Brunetti ©2015</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            $(document).ready(function() 
+            {
+                $(window).scroll(function() 
+                {
+                    if ($(window).scrollTop() > 500) 
+                    { 
+                        $("#two").fadeIn(500);
+                        $("#three").fadeIn(700);
+                        $("#four").fadeIn(900);
+                        $("#burgerBackGround").fadeIn(500);
+                    }
+                    if ($(window).scrollTop() < 500) 
+                    { 
+                        $("#two").fadeOut(500);
+                        $("#three").fadeOut(700);
+                        $("#four").fadeOut(900);
+                        $("#burgerBackGround").fadeOut(500);
+                    }
+                    if ($(window).scrollTop() > 1000)
+                    {
+                        $("#topBar").fadeIn(500);
+                    }
+                    if ($(window).scrollTop() < 1000)
+                    {
+                        $("#topBar").fadeOut(500);
+                    }
+                });
+                
+                function handler1()
+                {
+                    $(".barTop").toggleClass("barTopOn");
+                    $(".barMid").toggleClass("barMidOn");
+                    $(".barBot").toggleClass("barBotOn");
+                    $(".blurry").css({"color": "transparent", "text-shadow": "0 0 4px white"});
+                    $("h1").css({"color": "transparent", "text-shadow": "0 0 7px white"});
+                    $("img").css("filter", "blur(4px)");
+                    $("#mobileMenu").css("display", "block");
+                    $(this).one("click", handler2);
+                }
+                
+                function handler2()
+                {
+                    $(".barTop").toggleClass("barTopOn");
+                    $(".barMid").toggleClass("barMidOn");
+                    $(".barBot").toggleClass("barBotOn");
+                    $(".blurry").css({"color": "white", "text-shadow": "none"});
+                    $("h1").css({"color": "white", "text-shadow": "none"});
+                    $("img").css("filter", "none");
+                    $("#mobileMenu").css("display", "none");
+                    $(this).one("click", handler1);
+                }
+                
+                $(".burgerMenu").one("click", handler1);
+                $(".burgerNav").one("click", handler2);
+            });  
+            
+            var homeSlideIndex = 0;
+            carouselOne();
+            function carouselOne() 
+            {
+                var i;
+                var x = document.getElementsByClassName("homeSlides");
+                for (i = 0; i < x.length; i++) 
+                {
+                    x[i].style.display = "none"; 
+                }
+                homeSlideIndex++;
+                if (homeSlideIndex > x.length) 
+                {
+                    homeSlideIndex = 1;
+                } 
+                x[homeSlideIndex-1].style.display = "block"; 
+                setTimeout(carouselOne, 4000); 
+            }
+            
+            var amenitiesSlideIndex = 0;
+            carouselTwo();
+            function carouselTwo() 
+            {
+                var i;
+                var x = document.getElementsByClassName("serviceSlides");
+                for (i = 0; i < x.length; i++) 
+                {
+                    x[i].style.display = "none"; 
+                }
+                amenitiesSlideIndex++;
+                if (amenitiesSlideIndex > x.length) 
+                {
+                    amenitiesSlideIndex = 1;
+                } 
+                x[amenitiesSlideIndex-1].style.display = "block"; 
+                setTimeout(carouselTwo, 4000); 
+            }
+            
+            /* MAP */
+            function locatorMap() 
+            {
+                var cdz = {lat: 45.463042, lng: 9.184129};
+                var map = new google.maps.Map(document.getElementById("mapOne"), 
+                {
+                    zoom: 17,
+                    center: cdz
+                });
+                marker = new google.maps.Marker
+                ({
+                    map: map,
+                    position: cdz,
+                    animation: google.maps.Animation.DROP,
+                    title: "Casa Dello Zecchiere"
+                });
+            }
+        </script>
+    </body>
+</html>
