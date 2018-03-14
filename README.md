@@ -4,5 +4,3 @@ conferences etc.
 
 Features fully adaptive design, with an interesting and, I like to think, innovative approach to the mobile 
 version's nav menu (currently fixing minor bug on said menu).
-
-{<3} Made in Grieco {<3}
