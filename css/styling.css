@@ -1,7 +1,9 @@
-/* 
-    Created on : 05-Jun-2017, 15:58:53
-    Author     : Brian
-*/
+@font-face
+{
+    font-family: "Cochin";
+    src: url("font/cochin.ttf") format("truetype");
+}
+
 html, body
 {
     max-width: 100%;
@@ -10,12 +12,17 @@ html, body
 
 body
 {
-    font-family: "cochin";
+    font-family: "Cochin";
     background-color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
-            
+
+h1
+{
+    text-align: center;
+}
+
 h1, p
 {
     color: #e4e4e4;
@@ -48,14 +55,6 @@ a
     left: 20px;
     font-size: 24px;
 }
-            
-#one
-{
-    position: absolute;
-    top: 140px;
-    left: 20px;
-    font-size: 30px;
-}
 
 #centerContainer
 {
@@ -66,31 +65,27 @@ a
     width: 100%;
 }
 
+#des
+{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-size: 30px;
+}
+
+#one
+{
+    display: none;
+}
+
 #two
 {
     display: none;
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    font-size: 30px;
 }
 
 #three
 {
     display: none;
-    position: absolute;
-    top: 0px;
-    left: 140px;
-    font-size: 30px;
-}
-
-#four
-{
-    display: none;
-    top: 0px;
-    position: absolute;
-    left: 200px;
-    font-size: 30px;
 }
 
 /* SIDENAV SECTION */
@@ -194,12 +189,12 @@ a
     padding: 30px 0px 30px 0px;
     text-decoration: none;
     font-size: 28px;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0px 0px 20px white, 0px 0px 10px white;
+    color: #e4e4e4;
+    text-shadow: /*-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,*/ 0px 0px 20px white, 0px 0px 10px white;
     display: block;
 }
 
-/*@media screen and (max-height: 450px) 
+/*@media screen and (max-height: 450px)
 {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -222,9 +217,9 @@ a
 {
     display: inline;
     position: relative;
-    left: -40px;
+    left: -16px;
 }
-    
+
 .nav a
 {
     display: inline-block;
@@ -326,6 +321,11 @@ a
     top: -230px;
 }
 
+#servizi p
+{
+    text-align: left;
+}
+
 #serviceSlideShow
 {
     position: relative;
@@ -361,7 +361,7 @@ a
 {
     position: relative;
     width: 100%;
-}   
+}
 
 /* CONTACTS SECTION */
 #contatti
@@ -395,7 +395,7 @@ a
 #phone
 {
     position: relative;
-    top: -270px;
+    top: -290px;
     left: -45px;
 }
 
@@ -444,7 +444,32 @@ a
     right: 5%;
 }
 
-@media (min-width: 700px)
+@media (min-width: 1100px max-width: 1135px)
+{
+  p
+  {
+    color: red;
+  }
+
+  #serviceSlideShow
+  {
+      position: relative;
+      margin: auto;
+      top: 500px;
+      width: 90%;
+      height: 400px;
+      margin-bottom: 50px;
+  }
+
+  .serviceSlides
+  {
+      position: relative;
+      width: 100%;
+      top: 500px;
+  }
+}
+
+@media (min-width: 450px)
 {
     #logo
     {
@@ -453,7 +478,7 @@ a
         top: 50px;
         left: 60px;
     }
-    
+
     #affresco
     {
         display: block;
@@ -465,8 +490,8 @@ a
         top: 350px;
         left: 62px;
     }
-            
-    #one
+
+    #des
     {
         position: absolute;
         top: 500px;
@@ -474,7 +499,7 @@ a
         font-size: 30px;
     }
 
-    #two
+    #one
     {
         display: none;
         position: fixed;
@@ -483,7 +508,7 @@ a
         font-size: 50px;
     }
 
-    #three
+    #two
     {
         display: none;
         position: fixed;
@@ -492,7 +517,7 @@ a
         font-size: 50px;
     }
 
-    #four
+    #three
     {
         display: none;
         position: fixed;
@@ -507,7 +532,7 @@ a
         opacity: 0;
         pointer-events: none;
     }
-    
+
     #topBar
     {
         display: none;
@@ -521,12 +546,18 @@ a
         opacity: 1;
     }
 
+    .nav
+    {
+      position: relative;
+      margin: auto;
+    }
+
     .nav li
     {
         display: inline;
         position: relative;
     }
-    
+
     .nav a
     {
         display: inline-block;
@@ -671,7 +702,7 @@ a
     {
         position: relative;
         width: 100%;
-    }   
+    }
 
     /* CONTACTS SECTION */
     #contatti
